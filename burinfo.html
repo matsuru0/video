@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<title>burinfo</title>
+		<link rel="stylesheet" type="text/css" href="letsmakeitcss.css">
+		<link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="author" content="MaTsurU">
+		<meta name="description" content="simple learning website enter and check it burinfo welcome">
+		<meta name="keyword" content="html,css,javascript,burinfo,dida,bilel,burinfo">
+		<link rel="shortcut icon" href="LogoMakr_3JRTzi.png" />
+
+	</head>
+	<body>
+		<div id="header">
+			<img src="LogoMakr_3JRTzi.png" width="50px" height="50px">
+			
+			<a href="#" style="color:red"><span>home</span></a>
+			<a href="#" ><span>About</span></a>
+			<a href="#" ><span>Contact</span></a>
+			
+			<div class="dropdown">
+				<button class="dropbtn">Menu</button>
+				<div class="dropdown-content">
+					<a href="#" >home</a>
+					<a href="#" >About</a>
+					<a href="#" >Contact</a>
+				</div>
+			</div>
+		</div>
+			
+		
+		
+		<div id="leftcol">
+			<ul>
+				<li><a href="amn.html" >امن و شبكات</a></li>
+				<li><a href="">لغات برمجة</a></li>
+				<li><a href="">تطبيقات</a></li>
+				<li><a href="">المزيد</a></li>
+			</ul>
+		</div>
+		<div id="section">
+			<img src="LogoMakr_3JRTzi.png" alt="burinfo-logo"width="100px">
+			<h2 id="home">home : </h2>
+			<div class="welcome">
+			<p>Welcome To <b style="font-family:  'Aldrich';">BURINFO</b> a simple website made by matsuru for sharing my 
+			information and to Educate people about tech and Informatics field , have fun learning.</p>
+			</div>
+			<!--<h2>Trend : </h2>-->
+			<h2>new : </h2>
+			<div class="box">
+                <img src="LogoMakr_3JRTzi.png" alt="burinfo-logo">
+                <p><b><a href="#">:الهاكرز</a> </b><br>
+                    الهاكر او قرصان او مخترق بالانجليزية هو شخص غامض غير محدد إتجاهه اي مجهول محترف في مجال الحاسوب ان كان يستعمل نظام الويندوز او لينكس يستعمل لغات......انقرا في العنوان للمزيد 
+                </p>                
+            </div>
+			
+			
+		</div>
+		<div id='fixed'>
+			<a href="https://www.facebook.com/Bur-info-112098407204876" target="_blank"><img id="facebook" src="f_logo_RGB-White_58.png"  width="40px" height="40px"></a>
+			<a href="#"><img id="youtube" src="output-onlinepngtools.png" onmouseover ="logoytb()" onclick="idh()" onmouseleave="leave()" width="40px" height="40px"></a>
+		</div>
+		<div style="margin-bottom: 500px;"></div>
+		<div id="footer">
+			<div id="info">
+				<p>Made By : MaTsurU</p>
+				<p>Made in : 6/29/2020</p>
+				<p>copyright &copy; 2020</p>
+
+				
+			</div>
+			<div id="social">
+				<a href="https://www.facebook.com/Bur-info-112098407204876" target="_blank" ><img id='facebookbot' src="f_logo_RGB-Blue_58.png" width="50px" height="50px"></a>
+				<a href="#"><img  id='youtubebot' src="yt_logo_rgb_light.png" width='100px' height="50px" onclick="idh()"></a>
+				
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+			var language = {
+				eng:{
+					home1:'home'
+				},
+				arab:{
+					home1:'الرئيسية'
+				}
+			};
+			if(window.location.hash){
+				if(window.location.hash == "#arabic"){
+					home.textContent = language.arab.home1;
+				}
+			}
+			//youtube and social media function
+			function logoytb(){
+				document.getElementById('youtube').src = "yt_logo_rgb_dark.png";
+				document.getElementById('youtube').width = "100";
+				document.getElementById('youtube').height = "50";
+			}
+			function leave(){
+				document.getElementById('youtube').src = "output-onlinepngtools.png";
+				document.getElementById('youtube').width = "40";
+				document.getElementById('youtube').height = "40";
+			}
+			function idh(){
+				window.alert('currently I dont have any social media pages');
+			}
+		</script>
+	</body>
+</html>
